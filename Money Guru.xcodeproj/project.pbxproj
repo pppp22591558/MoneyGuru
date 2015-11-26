@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEB3A8001C0721ED007021C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3A7FF1C0721ED007021C8 /* AppDelegate.swift */; };
+		CEB3A8021C0721ED007021C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3A8011C0721ED007021C8 /* ViewController.swift */; };
+		CEB3A8051C0721ED007021C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB3A8031C0721ED007021C8 /* Main.storyboard */; };
+		CEB3A8081C0721ED007021C8 /* Money_Guru.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEB3A8061C0721ED007021C8 /* Money_Guru.xcdatamodeld */; };
+		CEB3A80A1C0721ED007021C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB3A8091C0721ED007021C8 /* Assets.xcassets */; };
+		CEB3A80D1C0721ED007021C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB3A80B1C0721ED007021C8 /* LaunchScreen.storyboard */; };
+		CEB3A8181C0721ED007021C8 /* Money_GuruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3A8171C0721ED007021C8 /* Money_GuruTests.swift */; };
+		CEB3A8231C0721ED007021C8 /* Money_GuruUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3A8221C0721ED007021C8 /* Money_GuruUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEB3A8141C0721ED007021C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB3A7F41C0721ED007021C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEB3A7FB1C0721ED007021C8;
+			remoteInfo = "Money Guru";
+		};
+		CEB3A81F1C0721ED007021C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB3A7F41C0721ED007021C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEB3A7FB1C0721ED007021C8;
+			remoteInfo = "Money Guru";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEB3A7FC1C0721ED007021C8 /* Money Guru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Guru.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB3A7FF1C0721ED007021C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEB3A8011C0721ED007021C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEB3A8041C0721ED007021C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEB3A8071C0721ED007021C8 /* Money_Guru.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Money_Guru.xcdatamodel; sourceTree = "<group>"; };
+		CEB3A8091C0721ED007021C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEB3A80C1C0721ED007021C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEB3A80E1C0721ED007021C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB3A8131C0721ED007021C8 /* Money GuruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Money GuruTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB3A8171C0721ED007021C8 /* Money_GuruTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money_GuruTests.swift; sourceTree = "<group>"; };
+		CEB3A8191C0721ED007021C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB3A81E1C0721ED007021C8 /* Money GuruUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Money GuruUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB3A8221C0721ED007021C8 /* Money_GuruUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money_GuruUITests.swift; sourceTree = "<group>"; };
+		CEB3A8241C0721ED007021C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEB3A7F91C0721ED007021C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB3A8101C0721ED007021C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB3A81B1C0721ED007021C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEB3A7F31C0721ED007021C8 = {
+			isa = PBXGroup;
+			children = (
+				CEB3A7FE1C0721ED007021C8 /* Money Guru */,
+				CEB3A8161C0721ED007021C8 /* Money GuruTests */,
+				CEB3A8211C0721ED007021C8 /* Money GuruUITests */,
+				CEB3A7FD1C0721ED007021C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEB3A7FD1C0721ED007021C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3A7FC1C0721ED007021C8 /* Money Guru.app */,
+				CEB3A8131C0721ED007021C8 /* Money GuruTests.xctest */,
+				CEB3A81E1C0721ED007021C8 /* Money GuruUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEB3A7FE1C0721ED007021C8 /* Money Guru */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3A7FF1C0721ED007021C8 /* AppDelegate.swift */,
+				CEB3A8011C0721ED007021C8 /* ViewController.swift */,
+				CEB3A8031C0721ED007021C8 /* Main.storyboard */,
+				CEB3A8091C0721ED007021C8 /* Assets.xcassets */,
+				CEB3A80B1C0721ED007021C8 /* LaunchScreen.storyboard */,
+				CEB3A80E1C0721ED007021C8 /* Info.plist */,
+				CEB3A8061C0721ED007021C8 /* Money_Guru.xcdatamodeld */,
+			);
+			path = "Money Guru";
+			sourceTree = "<group>";
+		};
+		CEB3A8161C0721ED007021C8 /* Money GuruTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3A8171C0721ED007021C8 /* Money_GuruTests.swift */,
+				CEB3A8191C0721ED007021C8 /* Info.plist */,
+			);
+			path = "Money GuruTests";
+			sourceTree = "<group>";
+		};
+		CEB3A8211C0721ED007021C8 /* Money GuruUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3A8221C0721ED007021C8 /* Money_GuruUITests.swift */,
+				CEB3A8241C0721ED007021C8 /* Info.plist */,
+			);
+			path = "Money GuruUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEB3A7FB1C0721ED007021C8 /* Money Guru */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB3A8271C0721ED007021C8 /* Build configuration list for PBXNativeTarget "Money Guru" */;
+			buildPhases = (
+				CEB3A7F81C0721ED007021C8 /* Sources */,
+				CEB3A7F91C0721ED007021C8 /* Frameworks */,
+				CEB3A7FA1C0721ED007021C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Money Guru";
+			productName = "Money Guru";
+			productReference = CEB3A7FC1C0721ED007021C8 /* Money Guru.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEB3A8121C0721ED007021C8 /* Money GuruTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB3A82A1C0721ED007021C8 /* Build configuration list for PBXNativeTarget "Money GuruTests" */;
+			buildPhases = (
+				CEB3A80F1C0721ED007021C8 /* Sources */,
+				CEB3A8101C0721ED007021C8 /* Frameworks */,
+				CEB3A8111C0721ED007021C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEB3A8151C0721ED007021C8 /* PBXTargetDependency */,
+			);
+			name = "Money GuruTests";
+			productName = "Money GuruTests";
+			productReference = CEB3A8131C0721ED007021C8 /* Money GuruTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEB3A81D1C0721ED007021C8 /* Money GuruUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB3A82D1C0721ED007021C8 /* Build configuration list for PBXNativeTarget "Money GuruUITests" */;
+			buildPhases = (
+				CEB3A81A1C0721ED007021C8 /* Sources */,
+				CEB3A81B1C0721ED007021C8 /* Frameworks */,
+				CEB3A81C1C0721ED007021C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEB3A8201C0721ED007021C8 /* PBXTargetDependency */,
+			);
+			name = "Money GuruUITests";
+			productName = "Money GuruUITests";
+			productReference = CEB3A81E1C0721ED007021C8 /* Money GuruUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEB3A7F41C0721ED007021C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Joshua Fang";
+				TargetAttributes = {
+					CEB3A7FB1C0721ED007021C8 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					CEB3A8121C0721ED007021C8 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = CEB3A7FB1C0721ED007021C8;
+					};
+					CEB3A81D1C0721ED007021C8 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = CEB3A7FB1C0721ED007021C8;
+					};
+				};
+			};
+			buildConfigurationList = CEB3A7F71C0721ED007021C8 /* Build configuration list for PBXProject "Money Guru" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEB3A7F31C0721ED007021C8;
+			productRefGroup = CEB3A7FD1C0721ED007021C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEB3A7FB1C0721ED007021C8 /* Money Guru */,
+				CEB3A8121C0721ED007021C8 /* Money GuruTests */,
+				CEB3A81D1C0721ED007021C8 /* Money GuruUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEB3A7FA1C0721ED007021C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB3A80D1C0721ED007021C8 /* LaunchScreen.storyboard in Resources */,
+				CEB3A80A1C0721ED007021C8 /* Assets.xcassets in Resources */,
+				CEB3A8051C0721ED007021C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB3A8111C0721ED007021C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB3A81C1C0721ED007021C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEB3A7F81C0721ED007021C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB3A8021C0721ED007021C8 /* ViewController.swift in Sources */,
+				CEB3A8081C0721ED007021C8 /* Money_Guru.xcdatamodeld in Sources */,
+				CEB3A8001C0721ED007021C8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB3A80F1C0721ED007021C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB3A8181C0721ED007021C8 /* Money_GuruTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB3A81A1C0721ED007021C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB3A8231C0721ED007021C8 /* Money_GuruUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEB3A8151C0721ED007021C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEB3A7FB1C0721ED007021C8 /* Money Guru */;
+			targetProxy = CEB3A8141C0721ED007021C8 /* PBXContainerItemProxy */;
+		};
+		CEB3A8201C0721ED007021C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEB3A7FB1C0721ED007021C8 /* Money Guru */;
+			targetProxy = CEB3A81F1C0721ED007021C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEB3A8031C0721ED007021C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEB3A8041C0721ED007021C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEB3A80B1C0721ED007021C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEB3A80C1C0721ED007021C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEB3A8251C0721ED007021C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEB3A8261C0721ED007021C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEB3A8281C0721ED007021C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Money Guru/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Joshua-Fang.Money-Guru";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEB3A8291C0721ED007021C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Money Guru/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Joshua-Fang.Money-Guru";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CEB3A82B1C0721ED007021C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Money GuruTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Joshua-Fang.Money-GuruTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Money Guru.app/Money Guru";
+			};
+			name = Debug;
+		};
+		CEB3A82C1C0721ED007021C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Money GuruTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Joshua-Fang.Money-GuruTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Money Guru.app/Money Guru";
+			};
+			name = Release;
+		};
+		CEB3A82E1C0721ED007021C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Money GuruUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Joshua-Fang.Money-GuruUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Money Guru";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CEB3A82F1C0721ED007021C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Money GuruUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Joshua-Fang.Money-GuruUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Money Guru";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEB3A7F71C0721ED007021C8 /* Build configuration list for PBXProject "Money Guru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB3A8251C0721ED007021C8 /* Debug */,
+				CEB3A8261C0721ED007021C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB3A8271C0721ED007021C8 /* Build configuration list for PBXNativeTarget "Money Guru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB3A8281C0721ED007021C8 /* Debug */,
+				CEB3A8291C0721ED007021C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEB3A82A1C0721ED007021C8 /* Build configuration list for PBXNativeTarget "Money GuruTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB3A82B1C0721ED007021C8 /* Debug */,
+				CEB3A82C1C0721ED007021C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEB3A82D1C0721ED007021C8 /* Build configuration list for PBXNativeTarget "Money GuruUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB3A82E1C0721ED007021C8 /* Debug */,
+				CEB3A82F1C0721ED007021C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CEB3A8061C0721ED007021C8 /* Money_Guru.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEB3A8071C0721ED007021C8 /* Money_Guru.xcdatamodel */,
+			);
+			currentVersion = CEB3A8071C0721ED007021C8 /* Money_Guru.xcdatamodel */;
+			path = Money_Guru.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CEB3A7F41C0721ED007021C8 /* Project object */;
+}
