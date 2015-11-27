@@ -106,6 +106,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    func parseFloatToPercent(toParse: Float) -> String {
+        return String(Int(toParse * 100)) + "%"
+    }
 
 }
 

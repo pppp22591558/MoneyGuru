@@ -10,10 +10,11 @@ import UIKit
 
 class InvestmentViewController: UIViewController {
 
-    var backgroundName: String?
     var imageName: String?
     var risk: Float?
     var earningRate: Float?
+    var level: Int?
+    var name: String?
     
 
     override func viewDidLoad() {
@@ -22,13 +23,28 @@ class InvestmentViewController: UIViewController {
         let minY = self.view.frame.minY
         let width = self.view.frame.width
         let height = self.view.frame.height
-        
         midX -= width * 0.5
-        let imageView = UIImageView(frame: CGRectMake(midX, minY + height*0.256, width, height*0.5))
-        imageView.contentMode = .ScaleAspectFit
         
-        imageView.image = UIImage(named: imageName!)
-        self.view.addSubview(imageView)
+        if name != "*Add a property" {
+            let imageView = UIImageView(frame: CGRectMake(midX, minY + height*0.256, width, height*0.5))
+            imageView.contentMode = .ScaleAspectFit
+            
+            imageView.image = UIImage(named: imageName!)
+            self.view.addSubview(imageView)
+        } else {
+            let tractorImage = UIImageView(frame: CGRectMake(midX, minY + height*0.51, width, height*0.25))
+            tractorImage.contentMode = .ScaleAspectFit
+            
+            tractorImage.image = UIImage(named: "Tractor")
+            self.view.addSubview(tractorImage)
+            
+            let addPropertyButton = UIButton(frame: CGRectMake(midX, minY + height*0.4, width, height*0.1))
+            addPropertyButton.setImage(UIImage(named: "Add Property"), forState: UIControlState.Normal)
+            
+            addPropertyButton.imageView!.contentMode = .ScaleAspectFit
+            
+            self.view.addSubview(addPropertyButton)
+        }
         
     }
 
