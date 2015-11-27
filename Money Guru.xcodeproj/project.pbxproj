@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		CEB3A8001C0721ED007021C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3A7FF1C0721ED007021C8 /* AppDelegate.swift */; };
-		CEB3A8021C0721ED007021C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3A8011C0721ED007021C8 /* ViewController.swift */; };
 		CEB3A8051C0721ED007021C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB3A8031C0721ED007021C8 /* Main.storyboard */; };
 		CEB3A8081C0721ED007021C8 /* Money_Guru.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEB3A8061C0721ED007021C8 /* Money_Guru.xcdatamodeld */; };
 		CEB3A80A1C0721ED007021C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB3A8091C0721ED007021C8 /* Assets.xcassets */; };
 		CEB3A80D1C0721ED007021C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB3A80B1C0721ED007021C8 /* LaunchScreen.storyboard */; };
 		CEB3A8181C0721ED007021C8 /* Money_GuruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3A8171C0721ED007021C8 /* Money_GuruTests.swift */; };
 		CEB3A8231C0721ED007021C8 /* Money_GuruUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3A8221C0721ED007021C8 /* Money_GuruUITests.swift */; };
+		CED06B2F1C07F2E8009229E4 /* InvestmentSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED06B2E1C07F2E8009229E4 /* InvestmentSceneViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CED06B311C07F787009229E4 /* InvestmentPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED06B301C07F787009229E4 /* InvestmentPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CED06B331C07F8CC009229E4 /* InvestmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED06B321C07F8CC009229E4 /* InvestmentViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 /* Begin PBXFileReference section */
 		CEB3A7FC1C0721ED007021C8 /* Money Guru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Guru.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB3A7FF1C0721ED007021C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEB3A8011C0721ED007021C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEB3A8041C0721ED007021C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEB3A8071C0721ED007021C8 /* Money_Guru.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Money_Guru.xcdatamodel; sourceTree = "<group>"; };
 		CEB3A8091C0721ED007021C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		CEB3A81E1C0721ED007021C8 /* Money GuruUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Money GuruUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB3A8221C0721ED007021C8 /* Money_GuruUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money_GuruUITests.swift; sourceTree = "<group>"; };
 		CEB3A8241C0721ED007021C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED06B2E1C07F2E8009229E4 /* InvestmentSceneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentSceneViewController.swift; sourceTree = "<group>"; };
+		CED06B301C07F787009229E4 /* InvestmentPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentPageViewController.swift; sourceTree = "<group>"; };
+		CED06B321C07F8CC009229E4 /* InvestmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				CEB3A7FF1C0721ED007021C8 /* AppDelegate.swift */,
-				CEB3A8011C0721ED007021C8 /* ViewController.swift */,
+				CED06B2E1C07F2E8009229E4 /* InvestmentSceneViewController.swift */,
+				CED06B301C07F787009229E4 /* InvestmentPageViewController.swift */,
+				CED06B321C07F8CC009229E4 /* InvestmentViewController.swift */,
 				CEB3A8031C0721ED007021C8 /* Main.storyboard */,
 				CEB3A8091C0721ED007021C8 /* Assets.xcassets */,
 				CEB3A80B1C0721ED007021C8 /* LaunchScreen.storyboard */,
@@ -258,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB3A8021C0721ED007021C8 /* ViewController.swift in Sources */,
+				CED06B2F1C07F2E8009229E4 /* InvestmentSceneViewController.swift in Sources */,
+				CED06B331C07F8CC009229E4 /* InvestmentViewController.swift in Sources */,
 				CEB3A8081C0721ED007021C8 /* Money_Guru.xcdatamodeld in Sources */,
+				CED06B311C07F787009229E4 /* InvestmentPageViewController.swift in Sources */,
 				CEB3A8001C0721ED007021C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +493,7 @@
 				CEB3A8291C0721ED007021C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEB3A82A1C0721ED007021C8 /* Build configuration list for PBXNativeTarget "Money GuruTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +502,7 @@
 				CEB3A82C1C0721ED007021C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEB3A82D1C0721ED007021C8 /* Build configuration list for PBXNativeTarget "Money GuruUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +511,7 @@
 				CEB3A82F1C0721ED007021C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
