@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE8D60191C0840E100FBCD61 /* AddPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D60181C0840E100FBCD61 /* AddPropertyViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CE8D601B1C0844A500FBCD61 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D601A1C0844A500FBCD61 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CEB3A8001C0721ED007021C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3A7FF1C0721ED007021C8 /* AppDelegate.swift */; };
 		CEB3A8051C0721ED007021C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB3A8031C0721ED007021C8 /* Main.storyboard */; };
 		CEB3A8081C0721ED007021C8 /* Money_Guru.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEB3A8061C0721ED007021C8 /* Money_Guru.xcdatamodeld */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE8D60181C0840E100FBCD61 /* AddPropertyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPropertyViewController.swift; sourceTree = "<group>"; };
+		CE8D601A1C0844A500FBCD61 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CEB3A7FC1C0721ED007021C8 /* Money Guru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Guru.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB3A7FF1C0721ED007021C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB3A8041C0721ED007021C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,9 +108,11 @@
 			isa = PBXGroup;
 			children = (
 				CEB3A7FF1C0721ED007021C8 /* AppDelegate.swift */,
+				CE8D601A1C0844A500FBCD61 /* LoginViewController.swift */,
 				CED06B2E1C07F2E8009229E4 /* InvestmentSceneViewController.swift */,
 				CED06B301C07F787009229E4 /* InvestmentPageViewController.swift */,
 				CED06B321C07F8CC009229E4 /* InvestmentViewController.swift */,
+				CE8D60181C0840E100FBCD61 /* AddPropertyViewController.swift */,
 				CEB3A8031C0721ED007021C8 /* Main.storyboard */,
 				CEB3A8091C0721ED007021C8 /* Assets.xcassets */,
 				CEB3A80B1C0721ED007021C8 /* LaunchScreen.storyboard */,
@@ -264,11 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8D601B1C0844A500FBCD61 /* LoginViewController.swift in Sources */,
 				CED06B2F1C07F2E8009229E4 /* InvestmentSceneViewController.swift in Sources */,
 				CED06B331C07F8CC009229E4 /* InvestmentViewController.swift in Sources */,
 				CEB3A8081C0721ED007021C8 /* Money_Guru.xcdatamodeld in Sources */,
 				CED06B311C07F787009229E4 /* InvestmentPageViewController.swift in Sources */,
 				CEB3A8001C0721ED007021C8 /* AppDelegate.swift in Sources */,
+				CE8D60191C0840E100FBCD61 /* AddPropertyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

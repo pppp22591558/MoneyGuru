@@ -42,6 +42,7 @@ class InvestmentViewController: UIViewController {
             addPropertyButton.setImage(UIImage(named: "Add Property"), forState: UIControlState.Normal)
             
             addPropertyButton.imageView!.contentMode = .ScaleAspectFit
+            addPropertyButton.addTarget(self, action: "addProperty:", forControlEvents: UIControlEvents.TouchUpInside)
             
             self.view.addSubview(addPropertyButton)
         }
@@ -53,7 +54,10 @@ class InvestmentViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func addProperty(sender: UIButton) {
+        self.parentViewController!.performSegueWithIdentifier("addProperty", sender: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

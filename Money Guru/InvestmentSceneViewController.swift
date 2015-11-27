@@ -29,7 +29,16 @@ class InvestmentSceneViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        buildingBackgroundView.layer.contents = UIImage(named: "SkyBuildingBackground.png")?.CGImage
+        let now = NSDate()
+        let daytimeStart = now.dateAt(hours: 7, minutes: 0)
+        let daytimeEnd = now.dateAt(hours:18, minutes: 30)
+        
+        if now >= daytimeStart && now <= daytimeEnd {
+            buildingBackgroundView.layer.contents = UIImage(named: "Day BG")?.CGImage
+        } else {
+            buildingBackgroundView.layer.contents = UIImage(named: "Night BG")?.CGImage
+
+        }
         
         collectButton.setImage(UIImage(contentsOfFile: "Collect Button Pressed.png"), forState: UIControlState.Highlighted)
         

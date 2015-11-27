@@ -113,3 +113,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension NSDate
+{
+    /**
+    This adds a new method dateAt to NSDate.
+    
+    It returns a new date at the specified hours and minutes of the receiver
+    
+    :param: hours: The hours value
+    :param: minutes: The new minutes
+    
+    :returns: a new NSDate with the same year/month/day as the receiver, but with the specified hours/minutes values
+    */
+    func dateAt(hours hours: Int, minutes: Int) -> NSDate
+    {
+        let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
+
+        let date_components = calendar.components([.Year, .Month, .Day], fromDate: self)
+
+        date_components.hour = hours
+        date_components.minute = minutes
+        date_components.second = 0
+        
+        let newDate = calendar.dateFromComponents(date_components)!
+        return newDate
+    }
+}
+extension NSDate: Comparable {}
+
+
+public func ==(lhs: NSDate, rhs: NSDate) -> Bool
+{
+    return lhs.timeIntervalSince1970 == rhs.timeIntervalSince1970
+}
+
+public func <(lhs: NSDate, rhs: NSDate) -> Bool
+{
+    return lhs.timeIntervalSince1970 < rhs.timeIntervalSince1970
+}
+public func >(lhs: NSDate, rhs: NSDate) -> Bool
+{
+    return lhs.timeIntervalSince1970 > rhs.timeIntervalSince1970
+}
+public func <=(lhs: NSDate, rhs: NSDate) -> Bool
+{
+    return lhs.timeIntervalSince1970 <= rhs.timeIntervalSince1970
+}
+public func >=(lhs: NSDate, rhs: NSDate) -> Bool
+{
+    return lhs.timeIntervalSince1970 >= rhs.timeIntervalSince1970
+}
+
