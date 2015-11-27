@@ -35,9 +35,10 @@ class InvestmentSceneViewController: UIViewController {
         
         if now >= daytimeStart && now <= daytimeEnd {
             buildingBackgroundView.layer.contents = UIImage(named: "Day BG")?.CGImage
+            let animateClouds = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "addDayCloud:", userInfo: nil, repeats: true)
         } else {
             buildingBackgroundView.layer.contents = UIImage(named: "Night BG")?.CGImage
-
+            let animateClouds = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "addNightCloud:", userInfo: nil, repeats: true)
         }
         
         collectButton.setImage(UIImage(contentsOfFile: "Collect Button Pressed.png"), forState: UIControlState.Highlighted)
@@ -47,6 +48,7 @@ class InvestmentSceneViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "hideInvestmentInfo:", name: "addPropertySwiped", object: nil)
 
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "showInvestmentInfo:", name: "addPropertyUnswiped", object: nil)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,5 +74,39 @@ class InvestmentSceneViewController: UIViewController {
     func showInvestmentInfo(notification: NSNotification) {
         buildingForegroundView.hidden = false
         collectButton.hidden = false
+    }
+    
+    func addDayCloud(timer: NSTimer) {
+        // MARK: cloud animation time
+        
+        if arc4random_uniform(4) != 1 {
+            let randomCloud = UIImageView(image: UIImage(named: "Day Cloud " + String(arc4random_uniform(4))))
+            let heightField = [Int(self.view.frame.maxY * 0.3), Int(self.view.frame.maxY * 0.65)]
+            
+            let randomY = CGFloat(arc4random_uniform(UInt32(heightField[1] - heightField[0]))) + CGFloat(heightField[0])
+            randomCloud.contentMode = .ScaleAspectFit
+            randomCloud.frame = CGRectMake(-101, randomY, 100, 100)
+            self.view.insertSubview(randomCloud, aboveSubview: buildingBackgroundView)
+            UIView.animateWithDuration(12.0, animations: {
+                randomCloud.center.x += self.view.frame.width + 200 + 100
+            })
+        }
+    }
+    
+    func addNightCloud(timer: NSTimer) {
+        // MARK: cloud animation time
+        
+        if arc4random_uniform(4) != 1 {
+            let randomCloud = UIImageView(image: UIImage(named: "Night Cloud " + String(arc4random_uniform(4))))
+            let heightField = [Int(self.view.frame.maxY * 0.3), Int(self.view.frame.maxY * 0.5)]
+            
+            let randomY = CGFloat(arc4random_uniform(UInt32(heightField[1] - heightField[0]))) + CGFloat(heightField[0])
+            randomCloud.contentMode = .ScaleAspectFit
+            randomCloud.frame = CGRectMake(-101, randomY, 100, 100)
+            self.view.insertSubview(randomCloud, aboveSubview: buildingBackgroundView)
+            UIView.animateWithDuration(12.0, animations: {
+                randomCloud.center.x += self.view.frame.width + 200 + 100
+            })
+        }
     }
 }
