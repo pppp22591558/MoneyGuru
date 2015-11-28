@@ -8,86 +8,14 @@
 
 import UIKit
 
-class InvestmentViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class InvestmentViewController: UIViewController {
 
     var imageName: String?
     var risk: Float?
     var earningRate: Float?
     var level: Int?
     var name: String?
-    
-    let possibleInvestments = [
-        [
-            "imageName": "Condo1",
-            "earningRate": 0.3,
-            "riskRate": 0.05,
-            "level": 2,
-            "name": "Lovely Estate"
-        ],
-        [
-            "imageName": "Condo2",
-            "earningRate": 0.35,
-            "riskRate": 0.1,
-            "level": 1,
-            "name": "Great House"
-        ],
-        [
-            "imageName": "Condo3",
-            "earningRate": 0.4,
-            "riskRate": 0.15,
-            "level": 3,
-            "name": "Mansion"
-        ],
-        [
-            "imageName": "FoodBuilding1",
-            "earningRate": 0.15,
-            "riskRate": 0.03,
-            "level": 1,
-            "name": "Hot Dog Stand"
-        ],
-        [
-            "imageName": "FoodBuilding2",
-            "earningRate": 0.2,
-            "riskRate": 0.05,
-            "level": 2,
-            "name": "Bistro"
-        ],
-        [
-            "imageName": "FoodBuilding3",
-            "earningRate": 0.3,
-            "riskRate": 0.08,
-            "level": 3,
-            "name": "Au Restaurant"
-        ],
-        [
-            "imageName": "House1",
-            "earningRate": 0.02,
-            "riskRate": 0.01,
-            "level": 1,
-            "name": "Good Ole Home"
-        ],
-        [
-            "imageName": "House2",
-            "earningRate": 0.05,
-            "riskRate": 0.02,
-            "level": 2,
-            "name": "Dad's House"
-        ],
-        [
-            "imageName": "Apartment1",
-            "earningRate": 0.05,
-            "riskRate": 0.1,
-            "level": 1,
-            "name": "My First Flat"
-        ],
-        [
-            "imageName": "Apartment2",
-            "earningRate": 0.1,
-            "riskRate": 0.15,
-            "level": 2,
-            "name": "City Style"
-        ]
-    ]
+
     
 
     override func viewDidLoad() {
@@ -128,30 +56,14 @@ class InvestmentViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func addProperty(sender: UIButton) {
-        let addPropertyTableView = UITableView(frame: CGRectMake(self.view.frame.minX, self.view.frame.minY, self.view.frame.width, self.view.frame.height))
+        /*let addPropertyTableView = UITableView(frame: CGRectMake(self.view.frame.minX, self.view.frame.minY, self.view.frame.width * 0.9, self.view.frame.height * 0.9))
         addPropertyTableView.delegate = self
         addPropertyTableView.dataSource = self
         
         addPropertyTableView.registerClass(InvestmentTableViewCell.self, forCellReuseIdentifier: "investment")
-        self.view.addSubview(addPropertyTableView)
-
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let propertyCell = tableView.dequeueReusableCellWithIdentifier("investment") as! InvestmentTableViewCell
+        self.view.addSubview(addPropertyTableView)*/
         
-        let investmentInfo = self.possibleInvestments[indexPath.row]
-        propertyCell.info = investmentInfo
-        
-        return propertyCell
-    }
-    
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return possibleInvestments.count
+        NSNotificationCenter.defaultCenter().postNotificationName("addPropertyTapped", object: nil)
     }
 
 }

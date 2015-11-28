@@ -21,6 +21,7 @@ class InvestmentSceneViewController: UIViewController {
     @IBOutlet weak var buildingName: UILabel!
     @IBOutlet weak var buildingReturnRate: UILabel!
     
+    @IBOutlet weak var addPropertyContainerView: UIView!
     var level: String?
     var name: String?
     var returnRate: String?
@@ -48,6 +49,8 @@ class InvestmentSceneViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "hideInvestmentInfo:", name: "addPropertySwiped", object: nil)
 
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "showInvestmentInfo:", name: "addPropertyUnswiped", object: nil)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "addProperty:", name: "addPropertyTapped", object: nil)
         
     }
 
@@ -108,5 +111,10 @@ class InvestmentSceneViewController: UIViewController {
                 randomCloud.center.x += self.view.frame.width + 200 + 100
             })
         }
+    }
+    
+    func addProperty(notification: NSNotification) {
+        self.buildingContainerView.hidden = true
+        self.addPropertyContainerView.hidden = false
     }
 }
