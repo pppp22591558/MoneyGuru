@@ -381,8 +381,29 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vlx-jg-Co8" userLabel="BackgroundView">
                                 <rect key="frame" x="0.0" y="122" width="600" height="477.5"/>
+                                <subviews>
+                                    <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Add Property Exit" translatesAutoresizingMaskIntoConstraints="NO" id="cvo-eN-oPa">
+                                        <rect key="frame" x="540" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="cvo-eN-oPa" secondAttribute="height" multiplier="1:1" id="s4P-Bi-4a4"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="cvo-eN-oPa" firstAttribute="width" secondItem="Vlx-jg-Co8" secondAttribute="width" multiplier="0.1" id="PJS-G8-0jl"/>
+                                    <constraint firstItem="cvo-eN-oPa" firstAttribute="top" secondItem="Vlx-jg-Co8" secondAttribute="top" id="T6o-qq-Gv0"/>
+                                    <constraint firstItem="cvo-eN-oPa" firstAttribute="centerX" secondItem="Vlx-jg-Co8" secondAttribute="centerX" id="Z1U-WX-jLE"/>
+                                    <constraint firstAttribute="trailing" secondItem="cvo-eN-oPa" secondAttribute="trailing" id="v8G-NE-YR6"/>
+                                    <constraint firstItem="cvo-eN-oPa" firstAttribute="centerY" secondItem="Vlx-jg-Co8" secondAttribute="centerY" id="wxO-R7-hLC"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Z1U-WX-jLE"/>
+                                        <exclude reference="wxO-R7-hLC"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klu-Rs-p1p" userLabel="NetWorthView">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="60"/>
@@ -719,6 +740,7 @@
                     </view>
                     <connections>
                         <outlet property="addPropertyContainerView" destination="WGI-wT-pHD" id="de9-gz-H4Z"/>
+                        <outlet property="addPropertyExit" destination="cvo-eN-oPa" id="Hts-Lg-HHy"/>
                         <outlet property="buildingBackgroundView" destination="Vlx-jg-Co8" id="0jK-c6-cKh"/>
                         <outlet property="buildingContainerView" destination="cez-Du-QHm" id="zxl-N8-CmT"/>
                         <outlet property="buildingForegroundView" destination="5cn-KY-sbf" id="M4Q-fF-9DO"/>
@@ -877,6 +899,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Add Property Exit" width="54" height="60"/>
         <image name="Buy Property Button" width="260" height="52"/>
         <image name="Coin" width="24" height="24"/>
         <image name="Collect Button" width="822" height="156"/>

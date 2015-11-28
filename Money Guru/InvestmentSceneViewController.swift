@@ -21,6 +21,7 @@ class InvestmentSceneViewController: UIViewController {
     @IBOutlet weak var buildingName: UILabel!
     @IBOutlet weak var buildingReturnRate: UILabel!
     
+    @IBOutlet weak var addPropertyExit: UIImageView!
     @IBOutlet weak var addPropertyContainerView: UIView!
     var level: String?
     var name: String?
@@ -51,6 +52,9 @@ class InvestmentSceneViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "showInvestmentInfo:", name: "addPropertyUnswiped", object: nil)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "addProperty:", name: "addPropertyTapped", object: nil)
+        
+        let exitTapped = UITapGestureRecognizer(target: self, action: "closeAddProperty:")
+        self.addPropertyExit.addGestureRecognizer(exitTapped)
         
     }
 
@@ -107,14 +111,35 @@ class InvestmentSceneViewController: UIViewController {
             randomCloud.contentMode = .ScaleAspectFit
             randomCloud.frame = CGRectMake(-101, randomY, 100, 100)
             self.view.insertSubview(randomCloud, aboveSubview: buildingBackgroundView)
-            UIView.animateWithDuration(12.0, animations: {
-                randomCloud.center.x += self.view.frame.width + 200 + 100
+            UIView.animateWithDuration(3.0, animations: {
+                self.addPropertyContainerView.frame.origin.y -= self.view.frame.height
+                self.addPropertyExit.frame.origin.y -= self.view.frame.height
             })
         }
     }
     
     func addProperty(notification: NSNotification) {
         self.buildingContainerView.hidden = true
+        self.addPropertyContainerView.frame.origin.y += self.view.frame.height
+        self.addPropertyExit.frame.origin.y += self.view.frame.height
         self.addPropertyContainerView.hidden = false
+        self.addPropertyExit.hidden = false
+        
+        UIView.transitionWithView(addPropertyExit, duration: 0.5, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+            self.addPropertyContainerView.frame.origin.y -= self.view.frame.height
+            self.addPropertyExit.frame.origin.y -= self.view.frame.height
+            }, completion: nil)
+    
+    }
+    
+    func closeAddProperty(sender: UITapGestureRecognizer) {
+        UIView.transitionWithView(addPropertyExit, duration: 0.5, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+            self.addPropertyContainerView.frame.origin.y += self.view.frame.height
+            self.addPropertyExit.frame.origin.y += self.view.frame.height
+            }, completion: nil)
+    
+        self.buildingContainerView.hidden = false
+        self.addPropertyContainerView.hidden = true
+        self.addPropertyExit.hidden = true
     }
 }
