@@ -185,6 +185,9 @@
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="1" green="1" blue="0.97883778990000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="CxR-bt-KCB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -198,9 +201,6 @@
                             <constraint firstItem="1hO-k0-jLJ" firstAttribute="centerX" secondItem="NYY-j7-ywl" secondAttribute="centerX" id="wee-HK-kFE"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="finishQuestionaire" id="zkb-A3-HId"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f6m-dn-1O9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
